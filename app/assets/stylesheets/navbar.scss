@@ -1,0 +1,33 @@
+$main-color: #3778c2;
+$secondary-color: #5fb523;
+$text-color: #434b54;
+
+.header {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: $main-color;
+    color: #fff;
+
+    .back-btn {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 900;
+      width: 2rem;
+      cursor: pointer;
+    }
+
+    .logout {
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}

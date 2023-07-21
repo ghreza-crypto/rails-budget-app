@@ -1,0 +1,133 @@
+$main-color: #3778c2;
+$secondary-color: #5fb523;
+$text-color: #434b54;
+
+.category-section {
+  display: flex;
+  flex-direction: column;
+  color: $text-color;
+  gap: 1rem;
+  padding: 1rem;
+
+  .category-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    box-shadow: 0 0 1rem #0000002f;
+    padding: 0.5rem;
+
+    .category-group {
+      display: flex;
+      gap: 1rem;
+
+      img {
+        width: 4.5rem;
+        height: 4.5rem;
+      }
+
+      .category-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .category-name {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+
+        .category-date {
+          font-size: 0.9rem;
+          color: #181818a2;
+        }
+      }
+    }
+
+    .category-total-spent {
+      font-weight: bold;
+    }
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    .btn {
+      padding: 0.5rem;
+      text-decoration: none;
+      font-size: 0.85rem;
+      background-color: #fff;
+      border: 2px solid $main-color;
+      border-radius: 0.25rem;
+      font-weight: bold;
+      text-align: center;
+      color: $main-color;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: $main-color;
+        color: #fff;
+      }
+    }
+
+    .delete-btn {
+      background-color: #fff;
+      border-color: red;
+      color: red;
+
+      &:hover {
+        background-color: red;
+        color: #fff;
+      }
+    }
+
+    .total-spent {
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+  }
+
+  hr {
+    border: 2px solid #434b54;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  #expenses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  .new-expense-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 0.85rem;
+    background-color: #fff;
+    border: 2px solid $secondary-color;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    color: $secondary-color;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $secondary-color;
+      color: #fff;
+    }
+  }
+}
