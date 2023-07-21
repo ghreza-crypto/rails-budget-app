@@ -117,7 +117,7 @@ To run tests, run the following command:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[Live Demo]()
+[Live Demo](https://rails-budget-app-2d4o.onrender.com)
 
 ## 👥 Authors <a name="authors"></a>
 
