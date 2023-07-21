@@ -1,0 +1,25 @@
+.expense-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  box-shadow: 0 0 1rem #0000002f;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  .expense-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .expense-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .expense-date {
+      font-size: 0.9rem;
+      color: #181818a2;
+    }
+  }
+}
