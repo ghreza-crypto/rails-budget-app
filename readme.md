@@ -163,6 +163,6 @@ I would like to thanks Gregoire Vella for the [Original design idea](https://www
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./License.md) licensed.
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
