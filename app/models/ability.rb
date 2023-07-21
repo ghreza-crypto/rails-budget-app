@@ -4,7 +4,7 @@ class Ability
   def initialize(user)
     # Define abilities for the user here. For example:
     #
-    user ||= User.new 
+    user ||= User.new
 
     can :create, Category
     can :manage, Category, author: { id: user.id }

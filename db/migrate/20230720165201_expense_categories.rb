@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+# expense categories section
+
 class ExpenseCategories < ActiveRecord::Migration[7.0]
   def change
     create_table :expense_categories do |t|
