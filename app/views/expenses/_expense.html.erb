@@ -1,0 +1,12 @@
+<%= stylesheet_link_tag "expense" %>
+
+<div id="<%= dom_id expense %>" class="expense-card">
+
+  <div class="expense-group">
+    <p class="expense-name"><%= expense.name %></p>
+
+    <p class="expense-date"><%= expense.created_at.strftime("%d %B %Y") %></p>
+  </div>
+
+  <p>Spent: $<%= expense.amount %></p>
+</div>

@@ -1,0 +1,13 @@
+<%= stylesheet_link_tag 'navbar' %>
+
+<header class='header'>
+    <nav class='navbar'>
+        <% if category && request.path == new_category_expense_path(category) %>
+            <%= link_to '<', category_path(category), class: "back-btn" %>
+        <% else %>
+            <%= link_to '<', categories_path, class: "back-btn" %>
+        <% end %>
+        <h1><%= @title %></h1>
+        <%= link_to 'Log Out', destroy_user_session_path, data: {turbo_method: :delete}, class: 'logout' %>
+    </nav>
+</header>

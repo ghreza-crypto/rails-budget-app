@@ -1,0 +1,42 @@
+$main-color: #3778c2;
+$secondary-color: #5fb523;
+$text-color: #434b54;
+
+.splash-screen-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 40vh;
+  min-height: 100vh;
+  color: $text-color;
+
+  .title {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .btn {
+      padding: 1.5rem;
+      width: 100%;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      color: $text-color;
+    }
+
+    .login-btn {
+      background-color: $main-color;
+      color: #fff;
+      border: 1px solid $main-color;
+      border-radius: 0.25rem;
+    }
+  }
+}

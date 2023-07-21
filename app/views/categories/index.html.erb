@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "categories_index" %>
+
+<%= render 'shared/navbar', category: nil %>
+
+<section class='categories-section'>
+  <div id="categories">
+    <% @categories.each do |category| %>
+      <%= link_to category do %>
+        <%= render category %>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="btn-container">
+    <%= link_to "New category", new_category_path, class: "btn" %>
+  </div>
+</section>

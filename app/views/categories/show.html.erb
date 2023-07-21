@@ -1,0 +1,26 @@
+<%= stylesheet_link_tag "categories_show" %>
+
+<%= render 'shared/navbar', category: @category %>
+
+<section class="category-section">
+  <%= render @category %>
+
+  <div class="actions">
+    <%= link_to "Edit category", edit_category_path(@category), class: "btn" %>
+    <p class="total-spent">Total spent: $<%= @category.expenses.sum(:amount) %></p>
+    <%= button_to "Delete category", @category, method: :delete, class: "btn delete-btn" %>
+  </div>
+
+  <hr>
+
+  <h2>Expenses</h2>
+
+  <div id="expenses">
+    <% @expenses.each do |expense| %>
+      <%= render expense %>
+    <% end %>
+  </div>
+
+  <%= link_to "New expense", new_category_expense_path(@category.id), class: "new-expense-btn" %>
+
+</section>
